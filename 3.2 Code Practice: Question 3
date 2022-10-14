@@ -1,0 +1,8 @@
+passcheck = str(input("Enter the password: "))
+password = str("Amedeo Avogadro")
+
+if passcheck == password:
+    print("Correct!")
+    
+if passcheck != password:
+    print("Not Correct")
