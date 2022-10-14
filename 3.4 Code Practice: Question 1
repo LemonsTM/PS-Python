@@ -1,0 +1,7 @@
+Color = input("What color?")
+colors = "orange"
+
+if Color == colors:
+    print("Correct")
+else:
+    print("Nope")
