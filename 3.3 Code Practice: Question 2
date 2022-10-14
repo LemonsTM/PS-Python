@@ -1,0 +1,10 @@
+red = int(input("Enter the red: "))
+green = int(input("Enter the green: "))
+blue = int(input("Enter the blue: "))
+
+if red < 1 or red > 256:
+    print("Red number is not correct.")
+if green < 1 or green > 256:
+    print("Green number is not correct.")
+if blue < 1 or blue > 256:
+    print("Blue number is not correct.")
