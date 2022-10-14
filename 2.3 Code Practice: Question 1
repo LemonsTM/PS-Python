@@ -1,0 +1,9 @@
+num=int(input("Enter a number: "))
+den=int(input("Enter another number: "))
+
+one = int(num//den)
+two = float(num%den)
+
+final = int(one + two)
+
+print("The answer is " + str(final))
