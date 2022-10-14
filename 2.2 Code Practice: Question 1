@@ -1,4 +1,0 @@
-num1 = int(input("Enter an interger : "))
-print(num1 - 1)
-print(num1 - 2)
-print(num1 - 3)
