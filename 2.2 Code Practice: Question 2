@@ -1,7 +1,0 @@
-a = input("Please input a number with decimals: ")
-b = input("Please enter another number with decimals: ")
-
-conv1 = float(a)
-conv2 = float(b)
-
-print(conv1 + conv2)
