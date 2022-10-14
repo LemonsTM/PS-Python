@@ -1,0 +1,8 @@
+a = float(input("Enter a number: "))
+ref = 26.4
+
+if a > ref:
+    print("More than " + str(ref))
+    
+if a < ref:
+    print("Less than " + str(ref))
