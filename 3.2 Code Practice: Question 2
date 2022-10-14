@@ -1,0 +1,8 @@
+a = float(input("Enter a number: "))
+F = 65
+
+if a > F:
+    print("Good Job!")
+    
+if a <= F:
+    print("That's not good.")
