@@ -1,0 +1,8 @@
+cday = int(input("Enter today's day numerically: "))
+fee1 = 16
+fee2 = 29
+
+if cday == fee1 or cday == fee2:
+    print("It's a fee day!")
+elif cday != fee1 or cday != fee2:
+    print("Sorry, not a fee day.")
