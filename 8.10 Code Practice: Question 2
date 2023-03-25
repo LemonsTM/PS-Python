@@ -1,0 +1,10 @@
+vocab = ["Libraries", "Software", "Cybersecurity", "Logic", "Productivity"]
+
+print(vocab)
+
+for i in range(len(vocab)):
+    for j in range(i+1, len(vocab)):
+        if len(vocab[i]) > len(vocab[j]):
+            vocab[i], vocab[j] = vocab[j], vocab[i]
+
+print(vocab)
