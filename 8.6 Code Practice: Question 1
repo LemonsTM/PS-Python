@@ -1,0 +1,15 @@
+import random
+
+def buildList(lst, num_values):
+    for i in range(num_values):
+        lst.append(random.randint(100, 199))
+    return lst
+
+num_values = int(input("How many values to add to the list: "))
+lst = []
+
+buildList(lst, num_values)
+print(lst)
+
+lst.sort()
+print(lst)
