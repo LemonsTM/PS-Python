@@ -1,0 +1,4 @@
+nums = [56, 25, -28, -5, 11, -6]
+
+print(nums[0])
+print(nums[-1])
