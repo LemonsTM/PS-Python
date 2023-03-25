@@ -1,0 +1,9 @@
+a = input("Enter a word: ")
+b = input("Enter a word: ")
+
+temp = a
+a = b
+b = temp
+
+print("a:", a)
+print("b:", b)
