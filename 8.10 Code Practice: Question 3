@@ -1,0 +1,16 @@
+terms = ["Bandwidth", "Hierarchy", "IPv6", "Software", "Firewall", "Cybersecurity", "Lists", "Program", "Logic", "Reliability"]
+
+def swap(terms, index1, index2):
+    temp = terms[index1]
+    terms[index1] = terms[index2]
+    terms[index2] = temp
+
+def sort_terms(terms):
+    for i in range(len(terms)):
+        for j in range(i+1, len(terms)):
+            if len(terms[i]) > len(terms[j]):
+                swap(terms, i, j)
+
+print(terms)
+sort_terms(terms)
+print(terms)
