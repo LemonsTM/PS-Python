@@ -1,0 +1,9 @@
+v = [54, 80, 64, 90, 27, 88, 48, 66, 30, 11, 55, 45]
+
+value = int(input("Search for: "))
+
+if value in v:
+    index = v.index(value)
+    print(f"{value} was found at index {index}")
+else:
+    print(f"{value} was not found, index is -1")
