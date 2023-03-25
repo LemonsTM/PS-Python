@@ -1,0 +1,20 @@
+1. remove
+2. It is a collection of commands that are given a name.
+3. Values above 80: 7
+4. 9
+5. An initializer list
+6. For loops let us access every element of a list.
+7. insert
+8. pop
+9. Juneau Helena Annapolis
+10. Juneau Atlanta Helena Madison Annapolis Topeka
+11. 72 90 67
+12. [21, 34, 63, 64, 67, 72, 90]
+13.Searching for an element can be done using one loop
+14. 2o bX or no2 2o bX
+15. [‘JuneAu’, ‘@tlAntA’, ‘HelenA’, ‘MAdison’, ‘@nnApolis’, ‘TopekA’]
+16. stuff[i].lower()
+17. An index refers to actual data within the list while an element refers to a memory location.
+18. The statement inside the for loop should be “c = c + len(stuff[i])”
+19. [84, 11, 67, 70, 93, 39, 46, 27]
+20. None of the above
