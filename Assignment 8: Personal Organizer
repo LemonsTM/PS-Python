@@ -1,0 +1,76 @@
+# Check if a given year is a leap year
+# Returns 1 if it is a leap year, 0 otherwise
+def leap_year(year):
+    if year % 4 == 0 and (year % 100 != 0 or year % 400 == 0):
+        return 1
+    else:
+        return 0
+
+# Check for and adjust month input if necessary
+def validateMonth(month):
+    while month < 1 or month > 12:
+        month = int(input("Invalid month. Please enter value from 1-12: "))
+    return month
+
+# Check for and adjust day input if necessary
+def validateDay(month, day, year):
+    while True:
+        if month in [4, 6, 9, 11]:
+            days_in_month = 30
+        elif month == 2:
+            if leap_year(year):
+                days_in_month = 29
+            else:
+                days_in_month = 28
+        else:
+            days_in_month = 31
+            
+        if day < 1 or day > days_in_month:
+            day = int(input("Invalid day. Please enter value from 1-" + str(days_in_month) + ": "))
+        else:
+            break
+    return day
+
+# This function is used to prompt, adjust, and append values to the 4 parallel lists
+def addEvent():
+    # Prompt the user for the event details
+    event_name = input("What is the event: ")
+    event_year = int(input("What is the year: "))
+    event_month = int(input("What is the month (number): "))
+    event_month = validateMonth(event_month)
+    event_day = int(input("What is the date: "))
+    event_day = validateDay(event_month, event_day, event_year)
+    
+    # Append the event details to the corresponding lists
+    eventName.append(event_name)
+    eventMonth.append(event_month)
+    eventDay.append(event_day)
+    eventYear.append(event_year)
+
+# This function is used to print all events to the user in the format
+# Event
+# Date: Month Day, Year
+def printEvents():
+    print("******************** List of Events ********************")
+    for i in range(len(eventName)):
+        month_names = ["", "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+        event_date = month_names[eventMonth[i]] + " " + str(eventDay[i]) + ", " + str(eventYear[i])
+        print(eventName[i])
+        print("Date: " + event_date)
+
+#*********** MAIN **********
+eventName = []
+eventMonth = []
+eventDay = []
+eventYear = []
+
+addEvent()
+
+while True:
+    continue_prompt = input("Do you want to enter another event? NO to stop: ")
+    if continue_prompt.lower() == "no":
+        break
+    else:
+        addEvent()
+
+printEvents()
