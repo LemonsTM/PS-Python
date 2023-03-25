@@ -1,0 +1,4 @@
+w = ["Algorithm", "Logic", "Filter", "Software", "Network", "Parameters", "Analyze", "Algorithm", "Functionality", "Viruses"]
+
+for word in w:
+    print(word.lower())
