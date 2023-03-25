@@ -1,0 +1,7 @@
+temperatures = []
+
+for i in range(5):
+    temp = int(input("Enter a temperature: "))
+    temperatures.append(temp)
+    
+print(temperatures)
