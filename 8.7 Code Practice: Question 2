@@ -1,0 +1,5 @@
+w = ["Algorithm", "Logic", "Filter", "Software", "Network", "Parameters", "Analyze", "Algorithm", "Functionality", "Viruses"]
+
+for word in w:
+    if word[0] == 'F' or word[0] == 'L':
+        print(word)
